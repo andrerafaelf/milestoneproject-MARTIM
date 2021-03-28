@@ -35,11 +35,11 @@ This is the main marketing website for Martim Meneses. It is designed to be resp
 
 *   ### Wireframes
 
-    -   Computer Monitor Wireframe - [View](assets/wireframes/milestone-PDF)
+    -   Computer Monitor Wireframe - [View](assets/wireframes/milestone-PDF.pdf)
 
-    -   Mobile Wireframe - [View](assets/wireframes/milestone-phone-PDF)
+    -   Mobile Wireframe - [View](assets/wireframes/milestone-phone-PDF.pdf)
 
-    -   Tablet Wireframe - [View](assets/wireframes/milestone-tablet-PDF)
+    -   Tablet Wireframe - [View](assets/wireframes/milestone-tablet-PDF.pdf)
 
 ## Features
 
