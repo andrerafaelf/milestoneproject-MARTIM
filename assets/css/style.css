@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:100,200,300,400,500,600,700');
+
+body{
+    font-family: "Nunito", sans-serif;
+    color: #3a3a3a;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* navigation links */
+
+#nav-links{
+    font-size: 110%;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-right: 30px;
+    line-height: 75px;
+}
+
+#nav-links ul {
+    float: right;
+}
+
+#nav-links li {
+    float: left;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+ul{
+ margin:0;
+}
+
+.martim-logo {
+    margin-left: 18px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #0066cc;
+    margin-top: 850px;
+    height: 90px;
+}
+
+footer p {
+    color: #fafafa;
+}
+
+.social-icons li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: left;
+    color: #fafafa;
+    margin-top: 30px;
+}
+
+.social-icons li {
+    padding-right: 50px;
+    padding-left: 30px;
+}
+
+.pdf-download {
+    font-size: 16px;
+    line-height: 7px;
+    color: #fafafa;
+    margin-top: 43px;
+    padding-left: 100px;
+}
+
+#dl-link {
+    padding-left: 4px;
+    text-decoration: underline;
+}
+
+a:link {
+    color: #fafafa;
+}
+
+a:visited {
+    color: #fafafa;
+}
+
+.martim-logo-footer {
+    text-align: center;
+    margin-top: 16px;
+}
