@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 body{
-    font-family: "Nunito", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #3a3a3a;
 }
 
@@ -9,50 +9,21 @@ body{
     text-transform: uppercase;
 }
 
-.inline-block {
-    display: inline-block;
+.inline {
+    display: inline;
 }
 
-/* navigation links */
-
-#nav-links{
-    font-size: 110%;
-    font-weight: 500;
-    letter-spacing: 3px;
-    margin-right: 30px;
-    line-height: 75px;
+/* NavBar */
+/* Custom CSS from https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-#nav-links ul {
-    float: right;
-}
-
-#nav-links li {
-    float: left;
-    list-style-type: none;
-    margin-right: 30px;
-}
-
-#nav-links a {
-    text-decoration: none;
-    color: #fafafa;
-}
-
-ul{
- margin:0;
-}
-
-.martim-logo {
-    margin-left: 18px;
-}
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+} 
 
 /* Footer */
-
-footer {
-    background-color: #0066cc;
-    margin-top: 850px;
-    height: 90px;
-}
 
 footer p {
     color: #fafafa;
@@ -62,29 +33,13 @@ footer p {
     width: 32px;
     height: 32px;
     padding: 12px 0;
-    font-size: 13px;
+    padding-top: 75px;
+    margin-left: 20px;
+    font-size: 40px;
     line-height: 7px;
     text-align: left;
     color: #fafafa;
     margin-top: 30px;
-}
-
-.social-icons li {
-    padding-right: 50px;
-    padding-left: 30px;
-}
-
-.pdf-download {
-    font-size: 16px;
-    line-height: 7px;
-    color: #fafafa;
-    margin-top: 43px;
-    padding-left: 100px;
-}
-
-#dl-link {
-    padding-left: 4px;
-    text-decoration: underline;
 }
 
 a:link {
@@ -95,7 +50,58 @@ a:visited {
     color: #fafafa;
 }
 
-.martim-logo-footer {
-    text-align: center;
-    margin-top: 16px;
+.martim-info, .martim-teams {
+    padding-top: 20px;
 }
+
+.info-spacing {
+    padding-top: 10px;
+}
+
+.martim-teams h2 {
+    color: #fafafa;
+}
+
+/* Device responsiveness */
+
+@media only screen and (max-width: 600px) {
+    .social-icons li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+    line-height: 7px;
+    text-align: left;
+    color: #fafafa;
+    margin-top: 30px;
+}    
+
+    .martim-teams {
+        padding-bottom: 20px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .social-icons li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    font-size: 30px;
+    line-height: 7px;
+    text-align: left;
+    color: #fafafa;
+    margin-top: 30px;
+}    
+
+    .martim-teams {
+        padding-bottom: 20px;
+    }
+} 
