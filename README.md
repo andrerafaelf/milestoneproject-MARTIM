@@ -29,7 +29,7 @@ This is the main marketing website for Martim Meneses. It is designed to be resp
     -   #### Colour Scheme
         -   The two main colours used are blue and white.
     -   #### Typography
-        -   The Oswald font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
+        -   The Roboto font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
     -   #### Imagery
         -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention.
 
