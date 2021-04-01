@@ -180,3 +180,60 @@ a:visited {
     border-radius: 10%;
 }
 }
+
+/* Testimonials */
+
+.testimonials {
+    padding-top: 60px;
+}
+
+.black-line {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.image-round {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+
+/* Blockquotes CSS from https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/ */
+
+blockquote {
+    padding-top: 20px;
+    margin-left: 40px;
+  text-indent: -0.45em;
+  border-left: 4px solid #0066cc;
+}
+@supports ( hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
+
+blockquote::before {
+    content: open-quote;
+}
+blockquote::after {
+    content: close-quote;
+}
+blockquote {
+    quotes: "“" "”" "‘" "’";
+}
+
+.blockquote-text-1, .blockquote-text-2 {
+    padding-top: 20px;
+}
+
+.blockquote-text-1 {
+    margin-right: 20px;
+}
+
+.blockquote-header {
+    margin-left: 20px;
+}
