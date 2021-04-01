@@ -64,9 +64,10 @@ a:visited {
 
 /* Hero Image */
 
-.hero-image {
+#hero-image {
     position: relative;
     background: url(../images/heroimage.jpg);
+    alt: "Martim crossing finish line";
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -183,7 +184,7 @@ a:visited {
 
 /* Testimonials */
 
-.testimonials {
+#testimonials {
     padding-top: 60px;
 }
 
@@ -236,4 +237,64 @@ blockquote {
 
 .blockquote-header {
     margin-left: 20px;
+}
+
+/* Achievements */
+
+#achievements {
+    padding-top: 100px;
+}
+
+div.portimao {
+    background-image: url(../images/portimao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #fafafa;
+    height: 300px;
+    width: 100%;
+}
+
+div.COTA1 {
+    background-image: url(../images/COTA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #fafafa;
+    height: 300px;
+    width: 100%;
+}
+
+div.spafranco {
+    background-image: url(../images/spafranco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #fafafa;
+    height: 300px;
+    width: 100%;
+}
+
+div.faial {
+    background-image: url(../images/faial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #fafafa;
+    height: 300px;
+    width: 100%;
+}
+
+div.transbox {
+  margin: 30px;
+  height: 79%;
+  background-color: rgba(0, 102, 204, 0.5);
+  border: 1px solid #fafafa;
+}
+
+div.transbox h5, h6 {
+  margin: 5%;
+  font-weight: bold;
+  color: #fafafa;
+  padding-top: 25px;
 }
