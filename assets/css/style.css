@@ -77,6 +77,7 @@ a:visited {
     background: url(../images/heroimage.jpg);
     alt: "Martim crossing finish line";
     height: 100vh;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     padding: 250px 0 200px;
