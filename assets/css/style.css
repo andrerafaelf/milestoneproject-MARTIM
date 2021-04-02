@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 body{
     font-family: "Roboto", sans-serif;
@@ -24,6 +24,10 @@ body{
 } 
 
 /* Footer */
+
+footer {
+    margin-top: 50px;
+}
 
 footer p {
     color: #fafafa;
@@ -68,7 +72,7 @@ a:visited {
     position: relative;
     background: url(../images/heroimage.jpg);
     alt: "Martim crossing finish line";
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     padding: 250px 0 200px;
@@ -146,6 +150,9 @@ a:visited {
         padding-bottom: 20px;
     }
 
+    .blockquote-text-2 {
+    margin: 0 auto;
+}
 }
 
 
@@ -182,25 +189,34 @@ a:visited {
 }
 }
 
-/* Testimonials */
+/* Testimonials and About Us */
 
-#testimonials {
+.testimonials,
+.about-us {
     padding-top: 60px;
 }
 
 .black-line {
-    width: 80%;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 50px;
     color: #000;
 }
 
 .image-round {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
 }
 
+.outer-line {
+    height: 350px;
+    width: 350px;
+    background-color: #0066cc;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 25px;
+}
 
 /* Blockquotes CSS from https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/ */
 
@@ -232,7 +248,7 @@ blockquote {
 }
 
 .blockquote-text-1 {
-    margin-right: 20px;
+    margin: 0 auto;
 }
 
 .blockquote-header {
@@ -298,3 +314,143 @@ div.transbox h5, h6 {
   color: #fafafa;
   padding-top: 25px;
 }
+
+/* Achievements Timeline */
+/* Timeline from https://codepen.io/Web_Cifar/pen/jObBvqN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    background-color: #0066cc;
+    color: #fafafa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+
+.img2017,
+.img2019 {
+    border-radius: 20px 0px 20px 20px;
+}
+
+.img2018,
+.img2020 {
+    border-radius: 0 20px 20px 20px;
+}
+
+.img2017,
+.img2018,
+.img2019,
+.img2020 {
+    padding-bottom: 10px;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.timeline-content .date {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #3a3a3a;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+            left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: #3a3a3a;
+  }
+
+  .timeline ul li {
+        width: 50%;
+        position: relative;
+        margin-bottom: 50px;
+  }
+
+  .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+  }
+
+  .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+  }
+
+  .timeline ul li::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #3a3a3a;
+        top: 0px;
+  }
+
+  .timeline ul li:nth-child(odd)::before {
+        transform: translate(50%, -50%);
+        right: -30px;
+  }
+
+  .timeline ul li:nth-child(even)::before {
+        transform: translate(-50%, -50%);
+        left: -30px;
+  }
+
+  .timeline-content .date {
+        position: absolute;
+        top: -30px;
+  }
+
+  .timeline ul li:hover::before {
+        background-color: #0066cc;
+  }
+}
+
