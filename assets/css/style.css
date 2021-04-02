@@ -23,6 +23,10 @@ body{
   border-color: rgb(255, 255, 255);
 } 
 
+.nav-bar-pos {
+    padding-right: 30px;
+}
+
 /* Footer */
 
 footer {
@@ -453,4 +457,3 @@ div.transbox h5, h6 {
         background-color: #0066cc;
   }
 }
-
