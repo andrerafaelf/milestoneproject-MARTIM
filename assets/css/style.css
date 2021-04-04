@@ -13,6 +13,10 @@ body{
     display: inline;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* NavBar */
 /* Custom CSS from https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
 .custom-toggler .navbar-toggler-icon {
@@ -25,6 +29,27 @@ body{
 
 .nav-bar-pos {
     padding-right: 30px;
+}
+
+.active {
+    border-bottom: 2px solid #fafafa;
+}
+
+/* Animation from https://www.youtube.com/watch?v=IYTBAQRBsw0 */
+
+.border-animation::after { 
+    margin-top: 8px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fafafa;
+    transition: width .3s
+}
+
+.border-animation:hover::after {
+    width: 100%;
+    transition: width .3s
 }
 
 /* Footer */
@@ -75,7 +100,6 @@ a:visited {
 #hero-image {
     position: relative;
     background: url(../images/heroimage.jpg);
-    alt: "Martim crossing finish line";
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
@@ -109,89 +133,6 @@ a:visited {
 #hero-text h3 {
     font-size: 20px;
     padding-top: 40px;
-}
-
-/* Device responsiveness */
-
-@media only screen and (max-width: 600px) {
-  #hero-text {
-    letter-spacing: 4px;
-    width: 200px;
-    height: 300px;
-    left: 20px;
-    padding-top: 15px;
-    padding-left: 15px;
-    background-color: rgba(0, 102, 204, 0.6);
-    position: absolute;
-    border-radius: 10%;
-    }
-
-
-#hero-text h2 {
-    text-align: center;
-    font-size: 14px;
-    }
-
-#hero-text h3 {
-    font-size: 14px;
-    padding-top: 20px;
-    }
-
-    .social-icons li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    padding-top: 55px;
-    padding-bottom: 50px;
-    margin-left: 20px;
-    font-size: 25px;
-    line-height: 7px;
-    text-align: left;
-    color: #fafafa;
-    margin-top: 30px;
-}    
-
-    .martim-teams {
-        padding-bottom: 20px;
-    }
-
-    .blockquote-text-2 {
-    margin: 0 auto;
-}
-}
-
-
-@media only screen and (min-width: 768px) {
-    .social-icons li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    padding-top: 75px;
-    padding-bottom: 50px;
-    margin-left: 10px;
-    font-size: 30px;
-    line-height: 7px;
-    text-align: left;
-    color: #fafafa;
-    margin-top: 30px;
-}    
-
-    .martim-teams {
-        padding-bottom: 20px;
-    }
-
-    #hero-text {
-    letter-spacing: 4px;
-    width: 300px;
-    height: 350px;
-    left: 50px;
-    bottom: 270px;
-    padding-top: 15px;
-    padding-left: 15px;
-    background-color: rgba(0, 102, 204, 0.6);
-    position: absolute;
-    border-radius: 10%;
-}
 }
 
 /* Testimonials and About Us */
@@ -397,8 +338,130 @@ div.transbox h5, h6 {
     color: #3a3a3a;
 }
 
+/* Gallery HTML */
+
+#martim-video {
+    margin-top: -75px;
+    margin-bottom: 100px;
+}
+
+#martim-gallery {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0px;
+    width: 100%;
+}
+
+.martim-video-1 {
+    width: 900px;
+    height: 500px;
+}
+
+#martim-gallery img {
+    width: 100%;
+}
+
+/* Device responsiveness */
+
+@media only screen and (max-width: 600px) {
+  #hero-text {
+    letter-spacing: 4px;
+    width: 200px;
+    height: 300px;
+    left: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgba(0, 102, 204, 0.6);
+    position: absolute;
+    border-radius: 10%;
+    }
+
+
+#hero-text h2 {
+    text-align: center;
+    font-size: 14px;
+    }
+
+#hero-text h3 {
+    font-size: 14px;
+    padding-top: 20px;
+    }
+
+    .social-icons li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+    line-height: 7px;
+    text-align: left;
+    color: #fafafa;
+    margin-top: 30px;
+}    
+
+    .martim-teams {
+        padding-bottom: 20px;
+    }
+
+    .blockquote-text-2 {
+    margin: 0 auto;
+}
+
+#martim-gallery {
+    margin-top: -300px;
+    clear: both;
+    line-height: 0;
+    column-count: 2;
+    column-gap: 0;
+}
+    
+    .martim-video-1 {
+    width: 300px;
+    height: 300px;
+    }
+
+    #martim-video {
+    margin-top: -45px;
+}
+}
+
+
 @media only screen and (min-width: 768px) {
-  .timeline:before {
+    .social-icons li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    font-size: 30px;
+    line-height: 7px;
+    text-align: left;
+    color: #fafafa;
+    margin-top: 30px;
+}    
+
+    .martim-teams {
+        padding-bottom: 20px;
+    }
+
+    #hero-text {
+    letter-spacing: 4px;
+    width: 300px;
+    height: 350px;
+    left: 50px;
+    bottom: 270px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgba(0, 102, 204, 0.6);
+    position: absolute;
+    border-radius: 10%;
+}
+
+	.timeline:before {
         content: "";
         position: absolute;
         top: 0;
@@ -456,5 +519,18 @@ div.transbox h5, h6 {
 
   .timeline ul li:hover::before {
         background-color: #0066cc;
-  }
+  }	
+
+  #martim-gallery {
+    margin-top: -240px;
+    clear: both;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 0;
+}
+
+  .martim-video-1 {
+    width: 700px;
+    height: 500px;
+    }
 }
