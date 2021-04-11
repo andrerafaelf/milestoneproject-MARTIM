@@ -34,22 +34,6 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white active" href="sponsor.html">Sponsor Us</a>
                             </li>
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Newsletter
-                                    </a>
-
-                                    <form class="dropdown-menu p-4 text-center">
-                                        <p>For race updates sign up here!</p>
-                                        <div class="form-group">
-                                            <label for="exampleDropdownFormEmail2">Email address</label>
-                                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Sign Up</button>
-                                    </form>
-                                </div>
-                            </li>
                         </ul>
                     </div>
             </div>
@@ -72,56 +56,47 @@
         </div>             
     </section>
 
-    <section>
-        <div class="table-responsive-sm td-size">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Silver</th>
-                        <th scope="col">Gold</th>
-                        <th scope="col">Platinum</th>
-                        <th scope="col">Diamond</th>
-                    </tr>
-                </thead>
-                <tbody>
-                     <tr>
-                    <th scope="row">Price</th>
-                        <td>£15</td>
-                        <td>£30</td>
-                        <td>£50</td>
-                        <td>£250</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">Thank You Letter</th>
-                        <td><span>&#9745;</span></td>
-                        <td><span>&#9745;</span></td>
-                        <td><span>&#9745;</span></td>
-                        <td><span>&#9745;</span></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">Signed Shirt</th>
-                        <td></td>
-                        <td><span>&#9745;</span></td>
-                        <td><span>&#9745;</span></td>
-                        <td><span>&#9745;</span></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">Track Day with Martim</th>
-                        <td></td>
-                        <td></td>
-                        <td><span>&#9745;</span></td>
-                        <td><span>&#9745;</span></td>
-                        </tr>
-                        <tr>
-                    <th scope="row">Your name/logo on my kart</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><span>&#9745;</span></td>
-                        </tr>
-                </tbody>
-            </table>
+    
+    <section id="cards" style="color: #fafafa;">
+        <div class="card-deck">
+            <div class="card bg-secondary hover-ani">
+                <div class="card-body text-center">
+                <h2 class="card-title" style="margin-bottom: 30px;">SILVER</h2>
+                <h3 class="card-title" style="margin-bottom: 30px;">£15</h3>
+                <h4 class="card-title price" style="margin-bottom: 30px;">&#8210; PERKS &#8210;</h4>
+                <p class="card-text" style="margin-bottom: 30px;">&bull; Thank you letter from Martim</p>
+                </div>
+            </div>
+            <div class="card bg-warning hover-ani">
+                <div class="card-body text-center">
+                <h2 class="card-title" style="margin-bottom: 30px;">GOLD</h2>
+                <h3 class="card-title" style="margin-bottom: 30px;">£30</h3>
+                <h4 class="card-title price" style="margin-bottom: 30px;">&#8210; PERKS &#8210;</h4>
+                <p class="card-text" style="margin-bottom: 30px;">&bull; Thank you letter from Martim</p>
+                <p class="card-text" style="margin-bottom: 30px;">&bull; Signed shirt from Martim</p>
+                </div>
+            </div>
+            <div class="card bg-info hover-ani">
+                <div class="card-body text-center">
+                <h2 class="card-title" style="margin-bottom: 30px;">PLATINUM</h2>
+                <h3 class="card-title" style="margin-bottom: 30px;">£50</h3>
+                <h4 class="card-title price" style="margin-bottom: 30px;">&#8210; PERKS &#8210;</h4>
+                <p class="card-text" style="margin-bottom: 30px;">&bull; Thank you letter from Martim</p>
+                <p class="card-text" style="margin-bottom: 30px;">&bull; Signed shirt from Martim</p>
+                <p class="card-text" style="margin-bottom: 30px;">&bull; Track day with Martim</p>
+                </div>
+            </div>
+            <div class="card bg-primary hover-ani">
+                <div class="card-body text-center">
+                <h2 class="card-title" style="margin-bottom: 30px;">DIAMOND</h2>
+                <h3 class="card-title price" style="margin-bottom: 30px;">£250</h3>
+                <h4 class="card-title price" style="margin-bottom: 30px;">&#8210; PERKS &#8210;</h4>
+                <p class="card-text" style="margin-bottom: 30px;">&bull; Thank you letter from Martim</p>
+                <p class="card-text" style="margin-bottom: 30px;">&bull; Signed shirt from Martim</p>
+                <p class="card-text" style="margin-bottom: 30px;">&bull; Track day with Martim</p>
+                <p class="card-text" style="margin-bottom: 30px;">&bull; Your name/logo on Martim's kart</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -161,11 +136,27 @@
                                     <span class="sr-only">Youtube</span>
                                 </a>
                             </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Newsletter
+                                    </a>
+
+                                    <form class="dropdown-menu p-4 text-center">
+                                        <p style="color: #3a3a3a;">For race updates sign up here!</p>
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormEmail2">Email address</label>
+                                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                                    </form>
+                                </div>
+                            </li>
                         </ul>
                 </div>
                 <div class="col-md-4 martim-teams">
                     <h2>My Teams</h2>
-                    <img src="/assets/images/martimteam.jpg" alt="Martim team K-ART" width="120" height="60">
+                    <img src="/assets/images/martimteamnobg.png" alt="Martim team K-ART" width="120" height="60">
                     <br>
                     <img src="/assets/images/martimteam2.jpg" alt="Martim team Junior Racing Team" width="120" height="60" style="margin-top: 15px;">
                 </div>

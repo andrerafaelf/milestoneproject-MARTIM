@@ -34,22 +34,6 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white border-animation" href="sponsor.html">Sponsor Us</a>
                             </li>
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Newsletter
-                                    </a>
-
-                                    <form class="dropdown-menu p-4 text-center">
-                                        <p>For race updates sign up here!</p>
-                                        <div class="form-group">
-                                            <label for="exampleDropdownFormEmail2">Email address</label>
-                                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Sign Up</button>
-                                    </form>
-                                </div>
-                            </li>
                         </ul>
                     </div>
             </div>
@@ -57,15 +41,12 @@
     </header>
 
     <!-- Gallery --> 
-    <section id="martim-video">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <iframe class="martim-video-1" src="https://www.youtube.com/embed/vMG7Ks-QiXA?autoplay=1&mute=1"></iframe>  
-                </div>
-            </div>
-        </div>
-    </section>
+    <video autoplay muted loop controls id="myVideo">
+        <source src="/assets/video/mm-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="spacing"></div>
 
     <section id="martim-gallery">
         <div class="container">
@@ -122,11 +103,27 @@
                                     <span class="sr-only">Youtube</span>
                                 </a>
                             </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Newsletter
+                                    </a>
+
+                                    <form class="dropdown-menu p-4 text-center">
+                                        <p style="color: #3a3a3a;">For race updates sign up here!</p>
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormEmail2">Email address</label>
+                                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                                    </form>
+                                </div>
+                            </li>
                         </ul>
                 </div>
                 <div class="col-md-4 martim-teams">
                     <h2>My Teams</h2>
-                    <img src="/assets/images/martimteam.jpg" alt="Martim team K-ART" width="120" height="60">
+                    <img src="/assets/images/martimteamnobg.png" alt="Martim team K-ART" width="120" height="60">
                     <br>
                     <img src="/assets/images/martimteam2.jpg" alt="Martim team Junior Racing Team" width="120" height="60" style="margin-top: 15px;">
                 </div>
