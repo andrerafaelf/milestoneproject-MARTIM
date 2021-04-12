@@ -108,7 +108,7 @@ a:visited {
 
     animation: zoom 450ms ease-in-out forwards;
     -webkit-animation: zoom 450ms ease-in-out forwards;
-    -moz-animation: zoom 450ms ease-in-out) forwards;
+    -moz-animation: zoom 450ms ease-in-out forwards;
     -o-animation: zoom 450ms ease-in-out forwards;
 
 }
@@ -397,13 +397,93 @@ div.transbox h5, h6 {
 }
 
 .spacing {
-    margin-top: 60px;
+    margin-top: 235px;
+}
+
+/* Sponsor Us */
+
+#sponsor-us {
+    margin-top: 140px;
+}
+
+.sponsor-heading {
+    color: #3a3a3a;
+    text-align: center;
+}
+
+.martim-sponsor-image {
+    margin-top: 50px;
+    margin-left: 80px;
+    height: 70%;
+    margin: 0 auto;
+}
+
+#sponsor-us div p {
+    margin-top: 150px;
+    max-width: 70%;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.paypal-link {
+    color: #3a3a3a;
+    background-color: #0066cc;
+    border: 1px solid #3a3a3a;
+    margin-bottom: 50px;
+}
+
+.incentives-column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.incentives-row {margin: 0 -5px;}
+
+.incentive1,
+.incentive2,
+.incentive3,
+.incentive4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 102, 204, 0.2);
+  padding: 14px;
+  text-align: center;
+  margin-top: 20px;
+  color: #fafafa;
+  height: 335px;
+}
+
+.incentive1 {
+    background-color: #669999;
+}
+
+.incentive2 {
+    background-color: #ff9933;
+}
+
+.incentive3 {
+    background-color: #99ccff;
+}
+
+.incentive4 {
+    background-color: #0066cc;
+}
+
+.incentives-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.td-size {
+    padding: 0 90px 90px 90px;
 }
 
 /* Device responsiveness */
 
 @media only screen and (max-width: 600px) {
-  #hero-text {
+  
+    #hero-text {
     letter-spacing: 4px;
     width: 200px;
     height: 300px;
@@ -447,18 +527,8 @@ div.transbox h5, h6 {
 
     .blockquote-text-2 {
     margin: 0 auto;
-}
+    }
 
-#martim-gallery {
-    margin-top: -300px;
-    clear: both;
-    line-height: 0;
-    column-count: 2;
-    column-gap: 0;
-}
-
-
-}
 
 .td-size {
     margin-left: -50px;
@@ -484,13 +554,22 @@ div.transbox h5, h6 {
     margin-top: 200px;
 }
 
-#cards {
-    min-width: 60%;
-    padding-top: 100px;
-    clear: right;
-    margin: auto;
+.incentives-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  #martim-gallery {
+    margin-top: -300px;
+    clear: both;
+    line-height: 0;
+    column-count: 2;
+    column-gap: 0;
 }
 }
+
 
 
 
@@ -599,43 +678,12 @@ div.transbox h5, h6 {
     column-gap: 0;
 }
 
-}
-
-/* Sponsor Us */
-
-#sponsor-us {
-    margin-top: 140px;
-}
-
-.sponsor-heading {
-    color: #3a3a3a;
-    text-align: center;
-}
-
-.martim-sponsor-image {
-    margin-top: 50px;
-    margin-left: 80px;
-    height: 70%;
-    margin: 0 auto;
-}
-
-#sponsor-us div p {
-    margin-top: 150px;
-    max-width: 70%;
-    text-align: center;
-    margin-left: 50px;
-    font-size: 18px;
-}
-
-.paypal-link {
-    color: #3a3a3a;
-    background-color: #0066cc;
-    border: 1px solid #3a3a3a;
-    margin-bottom: 50px;
-}
-
-.td-size {
-    padding: 0 90px 90px 90px;
+.incentive1,
+.incentive2,
+.incentive3,
+.incentive4 {
+  height: 460px;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -649,17 +697,5 @@ div.transbox h5, h6 {
     min-width: 100%; 
     min-height: 100%;
 }
-
-} 
-
-#cards {
-    margin: -100px 150px 150px 150px;
 }
-
-.card {
-    border-radius: 5%;
-}
-
-.card-text {
-    font-size: 18px;
 }
