@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-body{
+body {
     font-family: "Roboto", sans-serif;
     color: #3a3a3a;
 }
@@ -17,8 +17,14 @@ body{
     text-align: center;
 }
 
+.italics {
+    font-style: italic;
+    float: right;
+}
+
 /* NavBar */
 /* Custom CSS from https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
+
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -135,6 +141,7 @@ a:visited {
     0% {
         left: 100%;
     }
+
     100% {
         left: 5%;
     }
@@ -144,6 +151,7 @@ a:visited {
     0% {
         transform: scale(1.3);
     }
+
     100% {
         transform: scale(1);
     }
@@ -177,19 +185,36 @@ a:visited {
     color: #000;
 }
 
-.image-round {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-}
-
-.outer-line {
-    height: 350px;
-    width: 350px;
-    background-color: #0066cc;
+.test-img-1,
+.test-img-2,
+.test-img-3,
+.test-img-4 {
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     margin: 0 auto;
     padding: 25px;
+    border-color: #0066cc;
+    border-style: solid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.test-img-1 {
+    background-image: url(../images/willb.jpg);
+}
+
+.test-img-2 {
+    background-image: url(../images/brundle.jpg);
+}
+
+.test-img-3 {
+    background-image: url(../images/martimmeneses.jpg);
+}
+
+.test-img-4 {
+    background-image: url(../images/martimmenesesdad.jpg);
 }
 
 /* Blockquotes CSS from https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/ */
@@ -197,9 +222,10 @@ a:visited {
 blockquote {
     padding-top: 20px;
     margin-left: 90px;
-  text-indent: 12px;
-  border-left: 4px solid #0066cc;
+    text-indent: 12px;
+    border-left: 4px solid #0066cc;
 }
+
 @supports ( hanging-punctuation: first) {
   blockquote {
     text-indent: 0;
@@ -220,6 +246,7 @@ blockquote {
 .blockquote-text-1, .blockquote-text-2 {
     padding-top: 20px;
     margin-left: 20px;
+    padding-left: 10px;
 }
 
 .blockquote-header {
@@ -384,20 +411,29 @@ div.transbox h5, h6 {
     max-height: 100%;
 }
 
-#martim-gallery {
-    clear: both;
-    line-height: 0;
-    column-count: 3;
-    column-gap: 0px;
-    width: 100%;
+.gallery-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-#martim-gallery img {
+.gallery-column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.gallery-column img {
+    margin-top: 8px;
+    vertical-align: middle;
     width: 100%;
 }
 
 .spacing {
-    margin-top: 235px;
+    margin-top: 40px;
 }
 
 /* Sponsor Us */
@@ -412,10 +448,13 @@ div.transbox h5, h6 {
 }
 
 .martim-sponsor-image {
-    margin-top: 50px;
-    margin-left: 80px;
-    height: 70%;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
+    background-image: url(../images/martimsponsor.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 1000px;
 }
 
 #sponsor-us div p {
@@ -431,26 +470,40 @@ div.transbox h5, h6 {
     background-color: #0066cc;
     border: 1px solid #3a3a3a;
     margin-bottom: 50px;
+    margin-top: 100px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.paypal-link p {
+    margin-top: 18px;
+    font-size: 20px;
 }
 
 .incentives-column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
+    float: left;
+    width: 25%;
+    padding: 0 10px;
 }
 
-.incentives-row {margin: 0 -5px;}
+.incentives-row {
+    margin: 0 -5px;
+}
 
 .incentive1,
 .incentive2,
 .incentive3,
 .incentive4 {
-  box-shadow: 0 4px 8px 0 rgba(0, 102, 204, 0.2);
-  padding: 14px;
-  text-align: center;
-  margin-top: 20px;
-  color: #fafafa;
-  height: 335px;
+    box-shadow: 0 4px 8px 0 rgba(0, 102, 204, 0.2);
+    padding: 14px;
+    text-align: center;
+    margin-top: 20px;
+    color: #fafafa;
+    height: 335px;
+    border-radius: 13%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
 }
 
 .incentive1 {
@@ -470,13 +523,9 @@ div.transbox h5, h6 {
 }
 
 .incentives-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.td-size {
-    padding: 0 90px 90px 90px;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Device responsiveness */
@@ -484,206 +533,185 @@ div.transbox h5, h6 {
 @media only screen and (max-width: 600px) {
   
     #hero-text {
-    letter-spacing: 4px;
-    width: 200px;
-    height: 300px;
-    bottom: 10px;
-    left: 20px;
-    padding-top: 15px;
-    padding-left: 15px;
-    background-color: rgba(0, 102, 204, 0.6);
-    position: absolute;
-    border-radius: 10%;
+        letter-spacing: 4px;
+        width: 200px;
+        height: 300px;
+        bottom: 10px;
+        left: 20px;
+        padding-top: 15px;
+        padding-left: 15px;
+        background-color: rgba(0, 102, 204, 0.6);
+        position: absolute;
+        border-radius: 10%;
     }
 
 
-#hero-text h2 {
-    text-align: center;
-    font-size: 14px;
-    }
+    #hero-text h2 {
+        text-align: center;
+        font-size: 14px;
+        }
 
-#hero-text h3 {
-    font-size: 14px;
-    padding-top: 20px;
-    }
+    #hero-text h3 {
+        font-size: 14px;
+        padding-top: 20px;
+        }
 
     .social-icons li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    padding-top: 55px;
-    padding-bottom: 50px;
-    margin-left: 20px;
-    font-size: 25px;
-    line-height: 7px;
-    text-align: left;
-    color: #fafafa;
-    margin-top: 30px;
-}    
+        width: 32px;
+        height: 32px;
+        padding: 12px 0;
+        padding-top: 55px;
+        padding-bottom: 50px;
+        margin-left: 20px;
+        font-size: 25px;
+        line-height: 7px;
+        text-align: left;
+        color: #fafafa;
+        margin-top: 30px;
+    }    
 
     .martim-teams {
         padding-bottom: 20px;
     }
 
     .blockquote-text-2 {
-    margin: 0 auto;
+        margin: 0 auto;
     }
 
-
-.td-size {
-    margin-left: -50px;
-}
-
-.timeline:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 90%;
-    background-color: #3a3a3a;
-    z-index: -1;
-  }
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 90%;
+        background-color: #3a3a3a;
+        z-index: -1;
+    }
 
   .timeline-content .date {
-    color: #fafafa;
+        color: #fafafa;
+    }
+
+    .incentives-column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .gallery-column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
 }
-
-.spacing {
-    margin-top: 200px;
-}
-
-.incentives-column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-
-  #martim-gallery {
-    margin-top: -300px;
-    clear: both;
-    line-height: 0;
-    column-count: 2;
-    column-gap: 0;
-}
-}
-
-
-
 
 @media only screen and (min-width: 768px) {
     #myVideo {           
-    right: 0;
-    bottom: 0;
-}
+        right: 0;
+        bottom: 0;
+    }
 
     .social-icons li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    padding-top: 75px;
-    padding-bottom: 50px;
-    margin-left: 10px;
-    font-size: 30px;
-    line-height: 7px;
-    text-align: left;
-    color: #fafafa;
-    margin-top: 30px;
-}    
+        width: 32px;
+        height: 32px;
+        padding: 12px 0;
+        padding-top: 75px;
+        padding-bottom: 50px;
+        margin-left: 10px;
+        font-size: 30px;
+        line-height: 7px;
+        text-align: left;
+        color: #fafafa;
+        margin-top: 30px;
+    }    
 
     .martim-teams {
         padding-bottom: 20px;
     }
 
     #hero-text {
-    letter-spacing: 4px;
-    width: 300px;
-    height: 350px;
-    left: 50px;
-    bottom: 270px;
-    padding-top: 15px;
-    padding-left: 15px;
-    background-color: rgba(0, 102, 204, 0.6);
-    position: absolute;
-    border-radius: 10%;
-}
+        letter-spacing: 4px;
+        width: 300px;
+        height: 350px;
+        left: 50px;
+        bottom: 270px;
+        padding-top: 15px;
+        padding-left: 15px;
+        background-color: rgba(0, 102, 204, 0.6);
+        position: absolute;
+        border-radius: 10%;
+    }
 
 	.timeline:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
-    background-color: #3a3a3a;
-  }
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: #3a3a3a;
+    }
 
   .timeline ul li {
-    width: 50%;
-    position: relative;
-    margin-bottom: 50px;
-  }
+        width: 50%;
+        position: relative;
+        margin-bottom: 50px;
+    }
 
   .timeline ul li:nth-child(odd) {
-    float: left;
-    clear: right;
-    transform: translateX(-30px);
-    border-radius: 20px 0px 20px 20px;
-  }
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
 
   .timeline ul li:nth-child(even) {
-    float: right;
-    clear: left;
-    transform: translateX(30px);
-    border-radius: 0px 20px 20px 20px;
-  }
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
 
   .timeline ul li::before {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: #3a3a3a;
-    top: 0px;
-  }
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #3a3a3a;
+        top: 0px;
+    }
 
   .timeline ul li:nth-child(odd)::before {
-    transform: translate(50%, -50%);
-    right: -30px;
-  }
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
 
   .timeline ul li:nth-child(even)::before {
-    transform: translate(-50%, -50%);
-    left: -30px;
-  }
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
 
   .timeline-content .date {
-    position: absolute;
-    top: -30px;
-  }
+        position: absolute;
+        top: -30px;
+    }
 
   .timeline ul li:hover::before {
-    background-color: #0066cc;
-  }	
+        background-color: #0066cc;
+    }
 
-  #martim-gallery {
-    margin-top: -240px;
-    clear: both;
-    line-height: 0;
-    column-count: 3;
-    column-gap: 0;
-}
-
-.incentive1,
-.incentive2,
-.incentive3,
-.incentive4 {
-  height: 460px;
-  padding: 10px;
+    .incentive1,
+    .incentive2,
+    .incentive3,
+    .incentive4 {
+        height: 460px;
+        padding: 10px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -692,10 +720,9 @@ div.transbox h5, h6 {
     }
 
     #myVideo {
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
-}
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+    }
 }
