@@ -590,7 +590,7 @@ div.transbox h5, h6 {
         z-index: -1;
     }
 
-  .timeline-content .date {
+    .timeline-content .date {
         color: #fafafa;
     }
 
@@ -606,6 +606,16 @@ div.transbox h5, h6 {
         flex: 50%;
         max-width: 50%;
     }
+
+    .test-img-1,
+    .test-img-2,
+    .test-img-3,
+    .test-img-4 {
+        height: 300px;
+        width: 300px;
+    }
+
+    
 }
 
 @media only screen and (min-width: 768px) {
