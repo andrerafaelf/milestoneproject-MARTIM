@@ -103,7 +103,7 @@ a:visited {
 #hero-image {
     position: relative;
     background: url(../images/heroimage.jpg);
-    height: 100vh;
+    height: 950px;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -526,12 +526,15 @@ div.transbox h5, h6 {
 /* Device responsiveness */
 
 @media only screen and (max-width: 600px) {
-  
+    #hero-image {
+    height: 820px;
+}
+
     #hero-text {
         letter-spacing: 4px;
         width: 200px;
         height: 300px;
-        bottom: 10px;
+        bottom: 30px;
         left: 20px;
         padding-top: 15px;
         padding-left: 15px;
@@ -637,12 +640,16 @@ div.transbox h5, h6 {
         padding-bottom: 20px;
     }
 
+    #hero-image {
+    height: 1050px;
+    }
+
     #hero-text {
         letter-spacing: 4px;
         width: 300px;
         height: 350px;
         left: 50px;
-        bottom: 270px;
+        bottom: 150px;
         padding-top: 15px;
         padding-left: 15px;
         background-color: rgba(0, 102, 204, 0.6);
