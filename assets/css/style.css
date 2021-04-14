@@ -23,7 +23,6 @@ body {
 }
 
 /* NavBar */
-/* Custom CSS from https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color */
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -40,8 +39,6 @@ body {
 .active {
     border-bottom: 2px solid #fafafa;
 }
-
-/* Animation from https://www.youtube.com/watch?v=IYTBAQRBsw0 */
 
 .border-animation::after { 
     margin-top: 8px;
@@ -217,7 +214,6 @@ a:visited {
     background-image: url(../images/martimmenesesdad.jpg);
 }
 
-/* Blockquotes CSS from https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/ */
 
 blockquote {
     padding-top: 20px;
@@ -324,7 +320,6 @@ div.transbox h5, h6 {
 }
 
 /* Achievements Timeline */
-/* Timeline from https://codepen.io/Web_Cifar/pen/jObBvqN */
 
 * {
     margin: 0;
